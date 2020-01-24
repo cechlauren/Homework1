@@ -69,4 +69,26 @@ def quicksort(x):
 
     assert 2 == 2
     return
+def insertionsort(x):
+    """
+    def insertionsort(somelist):
+    count = 0
+    assign = 0
+    
+    assign +=1
+    for i in range(1,len(somelist)):
+        count += 2
+        while i > 0 and somelist[i] < somelist[i-1]:
+            somelist[i], somelist[i-1] = somelist[i-1], somelist[i]
+            assign += 2
+            i -= 1 #subtract 1 from the i and make the new i equal to i-1
+            assign += 1
+            
+    print("number of conditionals:", count)
+    print("number of assignments:", assign)
+    return somelist
+    """
+    assert 2 == 2
+    return x
+    
 
