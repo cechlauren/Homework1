@@ -22,10 +22,21 @@ def test_insertionsort():
     # failing, (2) does your code handle characters?
 
     x = np.array([1,2,4,0,1]).tolist()
-    
+    rho = [100,84.5,9,0.0045]
+    epsilon = []
+    sigma = [1]
+    delta = [9, 9, 8, 8, 7, 7, 1, 2, 1]
+    omega = [5, 4, 3, 2, 1]
+    alpha = [0, 9, 8, 1]
     # for now, just attempt to call the bubblesort function, should
     # actually check output
     algs.insertionsort(x)
+    assert np.array_equal(insertionsort(rho), np.array([0.0045, 9, 84.5, 100]).tolist())
+    assert np.array_equal(insertionsort(epsilon), np.array([]).tolist())
+    assert np.array_equal(insertionsort(sigma), np.array([1]).tolist())
+    assert np.array_equal(insertionsort(delta), np.array([1, 1, 2, 7, 7, 8, 8, 9, 9]).tolist())
+    assert np.array_equal(insertionsort(omega), np.array([1, 2, 3, 4, 5]).tolist())
+    assert np.array_equal(insertionsort(alpha), np.array([0, 1, 8, 9]).tolist())
     
     
 def test_bubblesort():
@@ -35,7 +46,12 @@ def test_bubblesort():
     # failing, (2) does your code handle characters?
 
     x = np.array([1,2,4,0,1])
-    
+    rho = [100,84.5,9,0.0045]
+    epsilon = []
+    sigma = [1]
+    delta = [9, 9, 8, 8, 7, 7, 1, 2, 1]
+    omega = [5, 4, 3, 2, 1]
+    alpha = [0, 9, 8, 1]
     # for now, just attempt to call the bubblesort function, should
     # actually check output
     algs.bubblesort(x)
@@ -43,6 +59,12 @@ def test_bubblesort():
 def test_quicksort():
 
     x = np.array([1,2,4,0,1]).tolist()
+    rho = [100,84.5,9,0.0045]
+    epsilon = []
+    sigma = [1]
+    delta = [9, 9, 8, 8, 7, 7, 1, 2, 1]
+    omega = [5, 4, 3, 2, 1]
+    alpha = [0, 9, 8, 1]
     # for now, just attempt to call the quicksort function, should
     # actually check output
     algs.quicksort(x)
