@@ -28,7 +28,7 @@ def test_bubblesort():
 
 def test_quicksort():
 
-    x = np.array([1,2,4,0,1])
+    x = np.array([1,2,4,0,1]).tolist()
     # for now, just attempt to call the quicksort function, should
     # actually check output
     algs.quicksort(x)
