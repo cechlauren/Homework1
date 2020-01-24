@@ -65,7 +65,6 @@ def quicksort(x):
 
 def insertionsort(x):
    
-    def insertionsort(x):
     count = 0
     assign = 0
     
