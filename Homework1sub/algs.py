@@ -8,7 +8,7 @@ def pointless_sort(x):
     return np.array([1,2,3])
 
 def bubblesort(x):
-    """
+   
     count = 0
     assign = 0
     index_length = len(x)-1
@@ -32,29 +32,27 @@ def bubblesort(x):
     print("number of assignments:", assign)
                 
     return x
-    """
+    
 
-    assert 2 == 2
-    return x
 
 def quicksort(x):
-    """
+   
     count = 0
     assign = 0
-    setpivot = len(somelist2)
+    setpivot = len(x)
     
     count += 1
     if setpivot <= 1: #is sequence length 1 or less?
-        return somelist2
+        return x
     else:
-        pivot = somelist2.pop()
+        pivot = x.pop()
         
     elements_greater_than_pivot = []
     elements_not_greater_than_pivot = []
     
     assign += 1
     count += 1
-    for i in somelist2:
+    for i in x:
         if i > pivot:
             elements_greater_than_pivot.append(i)
             
@@ -65,30 +63,24 @@ def quicksort(x):
     return quicksort(elements_not_greater_than_pivot) + [pivot] + quicksort(elements_greater_than_pivot)
 
 
-    """
-
-    assert 2 == 2
-    return
 def insertionsort(x):
-    """
-    def insertionsort(somelist):
+   
+    def insertionsort(x):
     count = 0
     assign = 0
     
     assign +=1
-    for i in range(1,len(somelist)):
+    for i in range(1,len(x)):
         count += 2
-        while i > 0 and somelist[i] < somelist[i-1]:
-            somelist[i], somelist[i-1] = somelist[i-1], somelist[i]
+        while i > 0 and x[i] < x[i-1]:
+            x[i], x[i-1] = x[i-1], x[i]
             assign += 2
             i -= 1 #subtract 1 from the i and make the new i equal to i-1
             assign += 1
             
     print("number of conditionals:", count)
     print("number of assignments:", assign)
-    return somelist
-    """
-    assert 2 == 2
     return x
+  
     
 
