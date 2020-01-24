@@ -26,7 +26,7 @@ def bubblesort(x):
             if x[i] > x[i+1]:
                 
                 sorted = False #values are not sorted
-                x[i], x[i+1] = x[i+1], x3[i]
+                x[i], x[i+1] = x[i+1], x[i]
                 assign += 2
     print("number of conditionals:", count)
     print("number of assignments:", assign)
