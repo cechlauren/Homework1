@@ -55,6 +55,12 @@ def test_bubblesort():
     # for now, just attempt to call the bubblesort function, should
     # actually check output
     algs.bubblesort(x)
+    assert np.array_equal(algs.bubblesort(rho), np.array([0.0045, 9, 84.5, 100]).tolist())
+    assert np.array_equal(algs.bubblesort(epsilon), np.array([]).tolist())
+    assert np.array_equal(algs.bubblesort(sigma), np.array([1]).tolist())
+    assert np.array_equal(algs.bubblesort(delta), np.array([1, 1, 2, 7, 7, 8, 8, 9, 9]).tolist())
+    assert np.array_equal(algs.bubblesort(omega), np.array([1, 2, 3, 4, 5]).tolist())
+    assert np.array_equal(algs.bubblesort(alpha), np.array([0, 1, 8, 9]).tolist())
 
 def test_quicksort():
 
@@ -68,3 +74,9 @@ def test_quicksort():
     # for now, just attempt to call the quicksort function, should
     # actually check output
     algs.quicksort(x)
+    assert np.array_equal(algs.quicksort(rho), np.array([0.0045, 9, 84.5, 100]).tolist())
+    assert np.array_equal(algs.quicksort(epsilon), np.array([]).tolist())
+    assert np.array_equal(algs.quicksort(sigma), np.array([1]).tolist())
+    assert np.array_equal(algs.quicksort(delta), np.array([1, 1, 2, 7, 7, 8, 8, 9, 9]).tolist())
+    assert np.array_equal(algs.quicksort(omega), np.array([1, 2, 3, 4, 5]).tolist())
+    assert np.array_equal(algs.quicksort(alpha), np.array([0, 1, 8, 9]).tolist())
