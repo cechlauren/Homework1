@@ -31,12 +31,12 @@ def test_insertionsort():
     # for now, just attempt to call the bubblesort function, should
     # actually check output
     algs.insertionsort(x)
-    assert np.array_equal(insertionsort(rho), np.array([0.0045, 9, 84.5, 100]).tolist())
-    assert np.array_equal(insertionsort(epsilon), np.array([]).tolist())
-    assert np.array_equal(insertionsort(sigma), np.array([1]).tolist())
-    assert np.array_equal(insertionsort(delta), np.array([1, 1, 2, 7, 7, 8, 8, 9, 9]).tolist())
-    assert np.array_equal(insertionsort(omega), np.array([1, 2, 3, 4, 5]).tolist())
-    assert np.array_equal(insertionsort(alpha), np.array([0, 1, 8, 9]).tolist())
+    assert np.array_equal(algs.insertionsort(rho), np.array([0.0045, 9, 84.5, 100]).tolist())
+    assert np.array_equal(algs.insertionsort(epsilon), np.array([]).tolist())
+    assert np.array_equal(algs.insertionsort(sigma), np.array([1]).tolist())
+    assert np.array_equal(algs.insertionsort(delta), np.array([1, 1, 2, 7, 7, 8, 8, 9, 9]).tolist())
+    assert np.array_equal(algs.insertionsort(omega), np.array([1, 2, 3, 4, 5]).tolist())
+    assert np.array_equal(algs.insertionsort(alpha), np.array([0, 1, 8, 9]).tolist())
     
     
 def test_bubblesort():
