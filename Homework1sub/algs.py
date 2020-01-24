@@ -9,7 +9,29 @@ def pointless_sort(x):
 
 def bubblesort(x):
     """
-    Describe how you are sorting `x`
+    count = 0
+    assign = 0
+    index_length = len(x)-1
+    sorted = False #escape while loop
+    
+    count += 1
+    while not sorted: #repeat until sorted = True
+        sorted = True
+        
+       
+        for i in range(0, index_length):
+            assign += 1
+            
+            count += 1
+            if x[i] > x[i+1]:
+                
+                sorted = False #values are not sorted
+                x[i], x[i+1] = x[i+1], x3[i]
+                assign += 2
+    print("number of conditionals:", count)
+    print("number of assignments:", assign)
+                
+    return x
     """
 
     assert 2 == 2
@@ -17,7 +39,32 @@ def bubblesort(x):
 
 def quicksort(x):
     """
-    Describe how you are sorting `x`
+    count = 0
+    assign = 0
+    setpivot = len(somelist2)
+    
+    count += 1
+    if setpivot <= 1: #is sequence length 1 or less?
+        return somelist2
+    else:
+        pivot = somelist2.pop()
+        
+    elements_greater_than_pivot = []
+    elements_not_greater_than_pivot = []
+    
+    assign += 1
+    count += 1
+    for i in somelist2:
+        if i > pivot:
+            elements_greater_than_pivot.append(i)
+            
+        else:
+            elements_not_greater_than_pivot.append(i)
+            
+    #the .appends are not assignments because there are no variable changes
+    return quicksort(elements_not_greater_than_pivot) + [pivot] + quicksort(elements_greater_than_pivot)
+
+
     """
 
     assert 2 == 2
