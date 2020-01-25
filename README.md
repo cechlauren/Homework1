@@ -3,7 +3,7 @@
 [![Build
 Status](https://travis-ci.org/cechlauren/Homework1.svg?branch=master)](https://travis-ci.org/cechlauren/Homework1)
 
-Example python project with testing.
+Homework1 python project with testing.
 
 ## usage
 
